@@ -89,7 +89,7 @@ function App() {
                 <Route path="/login" element={<AuthRoute><LoginPage /></AuthRoute>} />
                 <Route path="/forgotpassword" element={<AuthRoute><ForgotPassword /></AuthRoute>} />
                 <Route path="/signup" element={<AuthRoute><SignUpPage /></AuthRoute>} />
-                <Route path="/ProductPage/:id" element={<UserRoute><ProductPage onAddToCart={handleAddToCart} /></UserRoute>} />
+                <Route path="/ProductPage/:id" element={<ProductPage onAddToCart={handleAddToCart} />} />
                 <Route path="*" element={<NotFoundPage />} />
               </Routes>
             </div>
