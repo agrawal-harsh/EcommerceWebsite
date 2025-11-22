@@ -84,8 +84,8 @@ function App() {
             <div className="grow mx-4 my-8 bg-white px-8 py-2 max-w-6xl lg:w-full lg:px-12 lg:py-16 xl:mx-auto">
               <Alert />
               <Routes>
-                <Route path="/" element={<UserRoute><ProductListPage /></UserRoute>} />
-                <Route path="/cart" element={<UserRoute><CartPage /></UserRoute>} />
+                <Route path="/" element={<ProductListPage />} />
+                <Route path="/cart" element={<CartPage />} />
                 <Route path="/login" element={<AuthRoute><LoginPage /></AuthRoute>} />
                 <Route path="/forgotpassword" element={<AuthRoute><ForgotPassword /></AuthRoute>} />
                 <Route path="/signup" element={<AuthRoute><SignUpPage /></AuthRoute>} />
